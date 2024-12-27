@@ -1,0 +1,204 @@
+/* Color Keys */
+
+:root {
+	--clr-blue-100: hsl(225, 100%, 98%);
+	--clr-blue-200: hsl(225, 100%, 94%);
+	--clr-blue-200a: hsla(225, 100%, 94%, 0.292);
+	--clr-blue-400: hsl(224, 23%, 55%);
+	--clr-blue-600: hsl(245, 75%, 52%);
+	--clr-blue-700: hsl(223, 47%, 23%);
+}
+
+/* FONTS */
+
+/* Red Hat Display - 500 */
+@font-face {
+	font-display: swap;
+	font-family: "Red Hat Display";
+	font-style: normal;
+	font-weight: 500;
+	src: url("./order-summary-component-main/Red_Hat_Display/RedHatDisplay-Medium.ttf")
+		format("truetype");
+}
+
+/* Red Hat Display - 700 */
+@font-face {
+	font-display: swap;
+	font-family: "Red Hat Display";
+	font-style: normal;
+	font-weight: 700;
+	src: url("./order-summary-component-main/Red_Hat_Display/RedHatDisplay-Bold.ttf")
+		format("truetype");
+}
+
+/* Red Hat Display - 900 */
+@font-face {
+	font-display: swap;
+	font-family: "Red Hat Display";
+	font-style: normal;
+	font-weight: 900;
+	src: url("./order-summary-component-main/Red_Hat_Display/RedHatDisplay-Black.ttf")
+		format("truetype");
+}
+
+/* CSS RESET */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+  2. Remove default margin
+*/
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+/* Global */
+
+body {
+	font-size: 1rem;
+	background-color: var(--clr-blue-200);
+	font-family: "Red Hat Display";
+	font-weight: 500;
+	margin: 6em 2em;
+}
+
+/* Layout */
+.main__order {
+	background-color: var(--clr-blue-100);
+	text-align: center;
+	border-radius: 9px;
+	overflow: hidden;
+	color: var(--clr-blue-400);
+	font-weight: 700;
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.main__order__description {
+	padding: 1.7em 1.9em 2em;
+}
+
+.main__order__description__priceChoice {
+	background-color: var(--clr-blue-200a);
+	padding: 1em 0.8em;
+	border-radius: 9px;
+	margin-bottom: 2em;
+}
+
+.main__order__description__priceChoice--flex {
+	display: flex;
+	align-items: center;
+}
+
+.main__order__description__priceChoice__plan {
+	margin-right: 3em;
+}
+
+/* Typography */
+
+.main__order__description__title {
+	font-weight: 900;
+	color: var(--clr-blue-700);
+	margin-bottom: 0.5em;
+}
+
+.main__order__description__copy {
+	margin-bottom: 2em;
+}
+
+.main__order__description__priceChoice__plan__planName {
+	color: var(--clr-blue-700);
+}
+
+.main__order__description__priceChoice__plan__changePlanLink {
+	color: var(--clr-blue-600);
+}
+
+/* Assets */
+
+.main__order__description__priceChoice__img {
+	margin-right: 0.9em;
+}
+
+.main__order__description__btn {
+	display: block;
+	width: 100%;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+}
+
+.main__order__description__btn--purple {
+    background-color: var(--clr-blue-600);
+    color: var(--clr-blue-100);
+    margin-bottom: 1em;
+    padding: .8em;
+    box-shadow: 0px 7px 30px 0px var(--clr-blue-400);
+}
+
+.main__order__description__btn--transparent {
+    background-color: inherit;
+    color: inherit;
+    font-weight: 900;
+}
+
+/* 
+DESKTOP VIEW 
+*/
+
+@media(min-width:500px) {
+    body{
+        background-image: url(./order-summary-component-main/images/pattern-background-desktop.svg);
+        background-repeat: repeat-x;
+        background-position: 25px -40px;
+    }
+}

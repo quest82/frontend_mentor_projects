@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Frontend Mentor | Order summary card</title>
+	</head>
+	<body>
+		<main class="main">
+			<aside class="main__order">
+				<div class="main__order__featureImg">
+					<img
+						src="./order-summary-component-main/images/illustration-hero.svg"
+						alt=""
+					/>
+				</div>
+				<div class="main__order__description">
+					<h1 class="main__order__description__title">Order Summary</h1>
+					<p class="main__order__description__copy">
+						You can now listen to millions of songs, audiobooks, and podcasts on
+						any device anywhere you like!
+					</p>
+					<div
+						class="main__order__description__priceChoice main__order__description__priceChoice--flex flex"
+					>
+						<div class="main__order__description__priceChoice__img">
+							<img
+								src="./order-summary-component-main/images/icon-music.svg"
+								alt=""
+							/>
+						</div>
+						<div class="main__order__description__priceChoice__plan">
+							<b class="main__order__description__priceChoice__plan__planName"
+								>Annual Plan</b
+							>
+							<p class="main__order__description__priceChoice__plan__price">
+								$59.99/year
+							</p>
+						</div>
+						<a
+							href="changeplan.com"
+							class="main__order__description__priceChoice__plan__changePlanLink"
+							>Change</a
+						>
+					</div>
+					<button class="main__order__description__btn main__order__description__btn--purple">
+						Proceed to Payment
+					</button>
+					<button class="main__order__description__btn main__order__description__btn--transparent">
+						Cancel Order
+					</button>
+				</div>
+			</aside>
+		</main>
+	</body>
+</html>
