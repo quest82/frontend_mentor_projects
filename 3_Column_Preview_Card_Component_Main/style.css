@@ -1,0 +1,205 @@
+/* 
+COLOUR KEYS
+*/
+
+:root {
+	--clr-orange: hsl(31, 77%, 52%);
+	--clr-cyan-700: hsl(184, 100%, 22%);
+	--clr-cyan-900: hsl(179, 100%, 13%);
+	--clr-white-a: hsla(0, 0%, 100%, 0.75);
+	--clr-grey: hsl(0, 0%, 95%);
+}
+
+/* 
+FONTS
+*/
+
+/* Big Shoulders Display - Heading */
+
+@font-face {
+	font-family: "Big Shoulders Display";
+	font-display: swap;
+	font-style: normal;
+	font-weight: 700;
+	src: url(./3-column-preview-card-component-main/fonts/Big_Shoulders_Display/static/BigShouldersDisplay-Bold.ttf)
+		format("truetype");
+}
+
+/* Lexend Deca */
+
+@font-face {
+	font-family: "Lexend Deca";
+	font-display: swap;
+	font-style: normal;
+	font-weight: 400;
+	src: url(./3-column-preview-card-component-main/fonts/Lexend_Deca/static/LexendDeca-Regular.ttf)
+		format("truetype");
+}
+
+/* CSS Reset */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+  2. Remove default margin
+*/
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+	line-height: 1.7;
+	-webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+/* GLOBALS */
+
+body {
+	font-size: 1rem;
+    font-weight: 400;
+	font-family: "Lexend Deca";
+    color: var(--clr-white-a);
+	width: 100%;
+}
+
+.main {
+	max-width: 900px;
+	margin: 5em auto;
+}
+
+.flex {
+	display: flex;
+}
+
+/* LAYOUT */
+
+.productCard {
+	margin: 0 1em;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.productCard--flex {
+	flex-direction: column;
+}
+
+.productCard__display {
+    padding: 2.5em 2.1em;
+}
+
+.productCard__display__1 {
+	background-color: var(--clr-orange);
+}
+
+.productCard__display__2 {
+	background-color: var(--clr-cyan-700);
+}
+
+.productCard__display__3 {
+	background-color: var(--clr-cyan-900);
+}
+
+/* TYPOGRAPHY */
+
+.productCard__display__title {
+    font-family: 'Big Shoulders Display';
+    font-weight: 700;
+    font-size: 1.9rem;
+    color: var(--clr-grey);
+    text-transform: uppercase;
+	margin-bottom: .5em;
+}
+
+.productCard__display__copy {
+	margin-bottom: 1.3em;
+}
+
+.productCard__display__1 > .productCard__display__cta {
+	color: var(--clr-orange);
+}
+.productCard__display__2 > .productCard__display__cta {
+	color: var(--clr-cyan-700);
+}
+.productCard__display__3 > .productCard__display__cta {
+	color: var(--clr-cyan-900);
+}
+
+
+/* ASSETS */
+
+.productCard__display__img {
+    margin-bottom: 1.3em;
+}
+
+.productCard__display__cta {
+	padding: .59em 1.85em;
+	border-radius: 50px;
+	border: 0;
+}
+
+.productCard__display__cta:hover {
+	padding: .465em 1.85em;
+	background-color: inherit;
+	border: 2px solid var(--clr-grey);
+	color: var(--clr-grey);
+	transition: 500ms;
+	cursor: pointer;
+}
+
+/* 
+DESKTOP
+*/
+
+@media(min-width:900px){
+	.productCard--flex {
+		flex-direction: row;
+	}
+
+	.productCard__display__copy {
+		margin-bottom: 4.3em;
+	}
+}
