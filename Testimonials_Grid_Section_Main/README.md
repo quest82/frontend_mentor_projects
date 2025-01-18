@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Repo](https://github.com/quest82/frontend_mentor_projects/tree/main/Testimonials_Grid_Section_Main)
-- Live Site URL: [Live Site](https://chimerical-snickerdoodle-0186cf.netlify.app/)
+- Live Site URL: [Live Site](https://fluffy-jelly-bb155f.netlify.app/)
 
 ## My process
 
