@@ -137,6 +137,10 @@ body {
 
 .testimonial__card__1 {
 	background-color: var(--clr-violet);
+	background-image: url(./testimonials-grid-section-main/images/bg-pattern-quotation.svg);
+	background-repeat: no-repeat;
+	background-position: 14em 2px;
+	background-size: 120px;
 }
 
 .testimonial__card__2 {
@@ -234,11 +238,15 @@ DESKTOP VIEW
 
 	.testimonals--grid {
 		grid-template-columns: repeat(4, 1fr);
-		column-gap: 1em;
+		column-gap: 1.8em;
 	}
 
 	.testimonial__card__1 {
 		grid-column: 1/3;
+		background-image: url(./testimonials-grid-section-main/images/bg-pattern-quotation.svg);
+		background-repeat: no-repeat;
+		background-position: 24.5em 2px;
+		background-size: 120px;
 	}
 
 	.testimonial__card__4 {
