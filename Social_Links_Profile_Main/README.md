@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/quest82/frontend_mentor_projects/tree/main/social-links-profile-main)
+- Solution URL: [Solution](https://github.com/quest82/frontend_mentor_projects/tree/main/Social_Links_Profile_Main)
 - Live Site URL: [Live Site](https://creative-alpaca-1436d6.netlify.app/)
 
 ## My process
