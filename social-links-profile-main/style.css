@@ -120,6 +120,7 @@ body {
 	padding: 0 1em;
 	font-size: 1rem;
 	font-family: "Inter";
+	cursor: url('./social-links-profile-main/assets/dark-arrow-cursor-outline.svg'), auto;
 }
 
 /* ----- MOBILE VIEW ----- */
