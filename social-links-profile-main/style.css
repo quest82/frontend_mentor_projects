@@ -1,4 +1,55 @@
-/* CSS Reset */
+/* 
+COLOR KEYS
+*/
+
+:root {
+	--clr-green: hsl(75, 94%, 57%);
+	--clr-grey-100: hsl(0, 0%, 20%);
+	--clr-grey-300: hsl(0, 0%, 12%);
+	--clr-grey-500: hsl(0, 0%, 8%);
+	--clr-white: hsl(0, 0%, 100%);
+}
+
+/* 
+FONTS
+*/
+
+/* Inter - 400 */
+
+@font-face {
+	font-family: "Inter";
+	font-display: swap;
+	font-style: normal;
+	font-weight: 400;
+	src: url(./social-links-profile-main/assets/fonts/static/Inter-Regular.ttf)
+		format("truetype");
+}
+
+/* Inter - 600 */
+
+@font-face {
+	font-family: "Inter";
+	font-display: swap;
+	font-style: normal;
+	font-weight: 600;
+	src: url(./social-links-profile-main/assets/fonts/static/Inter-SemiBold.ttf)
+		format("truetype");
+}
+
+/* Inter - 700 */
+
+@font-face {
+	font-family: "Inter";
+	font-display: swap;
+	font-style: normal;
+	font-weight: 700;
+	src: url(./social-links-profile-main/assets/fonts/static/Inter-Bold.ttf)
+		format("truetype");
+}
+
+/* 
+CSS RESET 
+*/
 
 /*
   1. Use a more-intuitive box-sizing model.
@@ -8,9 +59,9 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding:0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 /*
@@ -19,8 +70,8 @@
   4. Improve text rendering
 */
 body {
-  line-height: 1.7;
-  -webkit-font-smoothing: antialiased;
+	line-height: 1.6;
+	-webkit-font-smoothing: antialiased;
 }
 
 /*
@@ -31,8 +82,8 @@ picture,
 video,
 canvas,
 svg {
-  display: block;
-  max-width: 100%;
+	display: block;
+	max-width: 100%;
 }
 
 /*
@@ -42,7 +93,7 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+	font: inherit;
 }
 
 /*
@@ -55,5 +106,96 @@ h3,
 h4,
 h5,
 h6 {
-  overflow-wrap: break-word;
+	overflow-wrap: break-word;
+}
+
+/* 
+GLOBALS
+*/
+
+body {
+	background-color: var(--clr-grey-500);
+	width: 100%;
+	height: 100%;
+	padding: 0 1em;
+	font-size: 1rem;
+	font-family: "Inter";
+}
+
+/* ----- MOBILE VIEW ----- */
+
+/* 
+LAYOUT 
+*/
+
+.profile {
+	background-color: var(--clr-grey-300);
+	max-width: 340px;
+	margin: 5em auto;
+	padding: 2em;
+	border-radius: 13px;
+	text-align: center;
+}
+
+/* 
+TYPOGRAPHY
+*/
+
+.profile__name,
+.profile__location {
+	font-weight: 700;
+}
+
+.profile__name,
+.profile__bio {
+	color: var(--clr-white);
+}
+
+.profile__location,
+.profile__bio {
+	font-size: 0.85rem;
+}
+
+.profile__name {
+	font-size: 1.42rem;
+}
+
+.profile__location {
+	color: var(--clr-green);
+	margin-bottom: 1.5em;
+}
+
+.profile__bio {
+	font-weight: 400;
+	margin-bottom: 1.4em;
+}
+
+/* 
+ASSET
+*/
+
+.profile__img {
+	width: 90px;
+	height: 90px;
+	margin: 0 auto 1em;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.profile__link__btn {
+	background-color: var(--clr-grey-100);
+	display: block;
+	margin-bottom: 0.8em;
+	padding: 0.52em;
+	border-radius: 9px;
+	text-decoration: none;
+	color: var(--clr-white);
+	font-weight: 600;
+	font-size: 0.9rem;
+}
+
+.profile__link__btn:hover {
+	background-color: var(--clr-green);
+	color: var(--clr-grey-500);
+	cursor: pointer;
 }
