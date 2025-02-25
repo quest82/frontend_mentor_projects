@@ -21,7 +21,7 @@ FONTS
 	font-display: swap;
 	font-style: normal;
 	font-weight: 400;
-	src: url(./social-links-profile-main/assets/fonts/static/Inter-Regular.ttf)
+	src: url(./Social_Links_Profile_Main/assets/fonts/static/Inter-Regular.ttf)
 		format("truetype");
 }
 
@@ -32,7 +32,7 @@ FONTS
 	font-display: swap;
 	font-style: normal;
 	font-weight: 600;
-	src: url(./social-links-profile-main/assets/fonts/static/Inter-SemiBold.ttf)
+	src: url(./Social_Links_Profile_Main/assets/fonts/static/Inter-SemiBold.ttf)
 		format("truetype");
 }
 
@@ -43,7 +43,7 @@ FONTS
 	font-display: swap;
 	font-style: normal;
 	font-weight: 700;
-	src: url(./social-links-profile-main/assets/fonts/static/Inter-Bold.ttf)
+	src: url(./Social_Links_Profile_Main/assets/fonts/static/Inter-Bold.ttf)
 		format("truetype");
 }
 
@@ -120,7 +120,7 @@ body {
 	padding: 0 1em;
 	font-size: 1rem;
 	font-family: "Inter";
-	cursor: url('./social-links-profile-main/assets/dark-arrow-cursor-outline.svg'), auto;
+	cursor: url('./Social_Links_Profile_Main/assets/dark-arrow-cursor-outline.svg'), auto;
 }
 
 /* ----- MOBILE VIEW ----- */
@@ -198,5 +198,5 @@ ASSET
 .profile__link__btn:hover {
 	background-color: var(--clr-green);
 	color: var(--clr-grey-500);
-	cursor: url('./social-links-profile-main/assets/hand-pointer.svg'), auto;
+	cursor: url('./Social_Links_Profile_Main/assets/hand-pointer.svg'), auto;
 }
