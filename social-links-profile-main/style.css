@@ -197,5 +197,5 @@ ASSET
 .profile__link__btn:hover {
 	background-color: var(--clr-green);
 	color: var(--clr-grey-500);
-	cursor: pointer;
+	cursor: url('./social-links-profile-main/assets/hand-pointer.svg'), auto;
 }
