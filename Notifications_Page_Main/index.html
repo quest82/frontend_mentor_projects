@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="style.css" />
+
+		<title>Frontend Mentor | Notifications page</title>
+	</head>
+	<body>
+		<main class="notifications">
+			<header class="notifications__header flex">
+				<h1 class="notifications__header__title">
+					Notifications
+					<span class="notifications__header__count">3</span>
+				</h1>
+				<a href="" class="notifications__header__clearAll">Mark all as read</a>
+			</header>
+
+			<div class="notifications__section">
+				<div
+					class="notifications__section__banner notifications__section__banner--unread"
+				>
+					<div class="notifications__section__banner__profileImg">
+						<img
+							src="./notifications-page-main/assets/images/avatar-mark-webber.webp"
+							alt="Mark Webber"
+						/>
+					</div>
+					<div class="notifications__section__banner__info">
+						<p class="notifications__section__banner__info__text">
+							<a
+								href=""
+								class="notifications__section__banner__info__text__profileName"
+								>Mark Webber</a
+							>
+							reacted to your recent post
+							<a
+								href=""
+								class="notifications__section__banner__info__text__profilePost"
+								>My first tournament today!</a
+							>
+							<span class="redDot"></span>
+						</p>
+						<p class="notifications__section__banner__info__timePosted">
+							1m ago
+						</p>
+					</div>
+				</div>
+
+				<div
+					class="notifications__section__banner notifications__section__banner--unread"
+				>
+					<div class="notifications__section__banner__profileImg">
+						<img
+							src="./notifications-page-main/assets/images/avatar-angela-gray.webp"
+							alt="Angela Gray"
+						/>
+					</div>
+					<div class="notifications__section__banner__info">
+						<p class="notifications__section__banner__info__text">
+							<a
+								href=""
+								class="notifications__section__banner__info__text__profileName"
+								>Angela Gray</a
+							>
+							followed you
+							<span class="redDot"></span>
+						</p>
+						<p class="notifications__section__banner__info__timePosted">
+							5m ago
+						</p>
+					</div>
+				</div>
+
+				<div
+					class="notifications__section__banner notifications__section__banner--unread"
+				>
+					<div class="notifications__section__banner__profileImg">
+						<img
+							src="./notifications-page-main/assets/images/avatar-jacob-thompson.webp"
+							alt="Jacob Thompson"
+						/>
+					</div>
+					<div class="notifications__section__banner__info">
+						<p class="notifications__section__banner__info__text">
+							<a
+								href=""
+								class="notifications__section__banner__text__info__profileName"
+								>Jacob Thompson</a
+							>
+							has joined your group<a
+								href=""
+								class="notifications__section__banner__info__text__profilePost"
+							>
+								Chess Club
+							</a>
+							<span class="redDot"></span>
+						</p>
+						<p class="notifications__section__banner__info__timePosted">
+							1 day ago
+						</p>
+					</div>
+				</div>
+
+				<div
+					class="notifications__section__banner notifications__section__banner--read"
+				>
+					<div class="notifications__section__banner__profileImg">
+						<img
+							src="./notifications-page-main/assets/images/avatar-rizky-hasanuddin.webp"
+							alt="Rizky Hasanuddin"
+						/>
+					</div>
+					<div class="notifications__section__banner__info">
+						<p class="notifications__section__banner__info__text">
+							<a
+								href=""
+								class="notifications__section__banner__info__text__profileName"
+								>Rizky Hasanuddin</a
+							>
+							sent you a private message
+						</p>
+						<p class="notifications__section__banner__info__timePosted">
+							5 days ago
+						</p>
+						<a
+							href=""
+							class="notifications__section__banner__info__privateMessage"
+						>
+							Hello, thanks for setting up the Chess Club. I've been a member
+							for a few weeks now and I'm already having lots of fun and
+							improving my game.
+						</a>
+					</div>
+				</div>
+
+				<div
+					class="notifications__section__banner notifications__section__banner--read"
+				>
+					<div class="notifications__section__banner__profileImg">
+						<img
+							src="./notifications-page-main/assets/images/avatar-kimberly-smith.webp"
+							alt="Kimberly Smith"
+						/>
+					</div>
+					<div class="notifications__section__banner__info">
+						<p class="notifications__section__banner__info__text">
+							<a
+								href=""
+								class="notifications__section__banner__info__text__profileName"
+								>Kimberly Smith</a
+							>
+							commented on your picture
+						</p>
+						<p class="notifications__section__banner__info__timePosted">
+							1 week ago
+						</p>
+					</div>
+					<div class="notifications__section__banner__postedImg">
+						<a href="" class="notifications__section__banner__postedImg__link">
+							<img
+								src="./notifications-page-main/assets/images/image-chess.webp"
+								alt=""
+							/>
+						</a>
+					</div>
+				</div>
+
+				<div
+					class="notifications__section__banner notifications__section__banner--read"
+				>
+					<div class="notifications__section__banner__profileImg">
+						<img
+							src="./notifications-page-main/assets/images/avatar-nathan-peterson.webp"
+							alt="Nathan Peterson"
+						/>
+					</div>
+					<div class="notifications__section__banner__info">
+						<p class="notifications__section__banner__info__text">
+							<a
+								href=""
+								class="notifications__section__banner__info__text__profileName"
+								>Nathan Peterson</a
+							>
+							reacted to your recent post
+							<a
+								href=""
+								class="notifications__section__banner__info__text__profilePost"
+							>
+								5 end-game strategies to increase your win rate</a
+							>
+						</p>
+						<p class="notifications__section__banner__info__timePosted">
+							2 weeks ago
+						</p>
+					</div>
+				</div>
+				<div
+					class="notifications__section__banner notifications__section__banner--read"
+				>
+					<div class="notifications__section__banner__profileImg">
+						<img
+							src="./notifications-page-main/assets/images/avatar-anna-kim.webp"
+							alt="Anna Kim"
+						/>
+					</div>
+					<div class="notifications__section__banner__info">
+						<p class="notifications__section__banner__info__text">
+							<a
+								href=""
+								class="notifications__section__banner__info__text__profileName"
+								>Anna Kim</a
+							>
+							left the group
+							<a
+								href=""
+								class="notifications__section__banner__info__text__profilePost"
+							>
+								Chess Club
+							</a>
+						</p>
+						<p class="notifications__section__banner__info__timePosted">
+							2 weeks ago
+						</p>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
