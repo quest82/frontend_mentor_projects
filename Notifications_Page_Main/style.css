@@ -4,14 +4,14 @@ COLOR KEYS
 
 :root {
 	--clr-red: hsl(1, 90%, 64%);
-	--clr-blue: hsl(219, 85%, 26%);
 	--clr-white: hsl(0, 0%, 100%);
 	--clr-blue-100: hsl(210, 60%, 98%);
 	--clr-blue-200: hsl(211, 68%, 94%);
 	--clr-blue-300: hsl(205, 33%, 90%);
 	--clr-blue-400: hsl(219, 14%, 63%);
 	--clr-blue-600: hsl(219, 12%, 42%);
-	--clr-blue-700: hsl(224, 21%, 14%);
+    --clr-blue-700: hsl(219, 85%, 26%);
+	--clr-blue-900: hsl(224, 21%, 14%);
 }
 
 /* 
@@ -28,6 +28,8 @@ FONTS
 	font-style: normal;
 	font-weight: 500;
 }
+
+/* Plus Jakarta Sans 800 */
 
 @font-face {
 	font-family: "Plus Jakarta Sans";
@@ -61,7 +63,7 @@ CSS RESET
   4. Improve text rendering
 */
 body {
-	line-height: 1.7;
+	line-height: 1.4;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -107,12 +109,18 @@ GLOBALS
 
 body{
     font-family: "Plus Jakarta Sans";
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--clr-blue-600);
     background-color: var(--clr-blue-100);
 }
 
-main {
+.notifications {
     background-color: var(--clr-white);
-    padding: 1em;
+    padding: 1.4em;
+    max-width: 700px;
+    margin: 2.5em auto;
+    border-radius: 12px;
 }
 
 .flex {
@@ -125,14 +133,146 @@ LAYOUT
 
 /* header layout */
 
+.notifications__header--flex {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.notifications__header {
+    margin-bottom: 1.8em;
+}
+
+/* notifications layout */
+
+.notifications__section__banner {
+    margin-bottom: 1em;
+    border-radius: 7px;
+    padding: 1.1em;
+}
+
+.notifications__section__banner--unread {
+    background-color: var(--clr-blue-100);
+}
 
 
 /* 
 TYPOGRAPHY
 */
 
+a {
+    text-decoration: none;
+}
+
+.notifications__header__clearAll,
+.notifications__section__banner__info__text__profilePost,
+.notifications__section__banner__info__privateMessage {
+    color: var(--clr-blue-600);
+}
+
+.notifications__header__title,
+.notifications__section__banner__info__text__profileName,
+.notifications__section__banner__info__text__profilePost,
+.notifications__section__banner__info__text__profileGroup {
+    font-weight: 800;
+}
+
+.notifications__header__title,
+.notifications__section__banner__info__text__profileName {
+    color: var(--clr-blue-900);
+}
+
+.notifications__header__clearAll:hover,
+.notifications__header__clearAll:focus,
+.notifications__section__banner__info__text__profilePost:hover,
+.notifications__section__banner__info__text__profilePost:focus,
+.notifications__section__banner__info__text__profileName:hover,
+.notifications__section__banner__info__text__profileName:focus {
+    color: var(--clr-blue-700);
+}
+
+
 /* header typography*/
 
 .notifications__header__title {
     font-size: 1.55rem;
+}
+
+.notifications__header__count {
+    background-color: var(--clr-blue-700);
+    margin-left: .35em;
+    padding: .14em .75em;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color: var(--clr-white);
+}
+
+/* notifications typography */
+
+.notifications__section__banner__info__text {
+    margin-bottom: .2em;
+}
+
+.notifications__section__banner__info__text__profileName {
+    margin-right: .2em;
+}
+
+.notifications__section__banner__info__text__profilePost,
+.notifications__section__banner__info__text__profileGroup {
+    margin-left: .2em;
+}
+
+.notifications__section__banner__info__timePosted {
+    color: var(--clr-blue-400);
+}
+
+.notifications__section__banner__info__text__profileGroup {
+    color: var(--clr-blue-700);
+}
+
+.notifications__section__banner__info__privateMessage {
+    display: block;
+    margin-top: .9em;
+    padding: 1em;
+    border: 1px solid var(--clr-blue-300);
+    border-radius: 6px;
+}
+
+.notifications__section__banner__info__privateMessage:hover{
+    background-color: var(--clr-blue-200);
+}
+
+/* 
+ASSETS
+*/
+
+.notifications__section__banner__postedImg,
+.notifications__section__banner__profileImg {
+    max-width: 2.8125em;
+}
+
+.notifications__section__banner__profileImg {
+    margin-right: .9375em;
+}
+
+.notifications__section__banner__postedImg {
+    margin-left: .9375em;
+
+}
+
+.redDot {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: var(--clr-red);
+    margin-left: .2em;
+}
+
+/* ----- DESKTOP VIEW ----- */
+
+@media (min-width:43.75em) {
+    .notifications {
+        background-color: var(--clr-white);
+    }
 }
