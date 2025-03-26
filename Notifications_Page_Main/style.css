@@ -155,10 +155,6 @@ LAYOUT
     background-color: var(--clr-blue-100);
 }
 
-.notifications__section__banner--read {
-    background-color: var(--clr-white);
-}
-
 /* 
 TYPOGRAPHY
 */

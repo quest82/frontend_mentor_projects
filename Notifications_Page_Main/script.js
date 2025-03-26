@@ -4,9 +4,7 @@ const notificationDot = document.querySelectorAll('.redDot')
 
 allReadBtn.addEventListener('click', e => {
     unreadNotifications.forEach(notice => {
-        notice.classList.remove('notifications__section__banner--unread')
-        notice.classList.add('notifications__section__banner--read')  
-       
+        notice.classList.remove('notifications__section__banner--unread')       
     })
 
     notificationDot.forEach(dot => {
