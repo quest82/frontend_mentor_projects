@@ -1,0 +1,265 @@
+/* 
+COLOR KEYS
+*/
+
+:root {
+	--clr-white: hsl(0, 0%, 100%);
+	--clr-grey-300: hsl(210, 46%, 95%);
+	--clr-grey-700: hsl(217, 19%, 35%);
+	--clr-grey-700a: hsla(217, 19%, 35%, 0.509);
+	--clr-grey-700b: hsla(217, 19%, 35%, 0.594);
+	--clr-grey-100: hsl(0, 0%, 81%);
+	--clr-grey-100a: hsla(0, 0%, 81%, 0.457);
+	--clr-violet: hsl(263, 55%, 52%);
+	--clr-blue: hsl(219, 29%, 14%);
+}
+
+/* 
+FONTS 
+*/
+
+/* Barlow Semi Condensed - 500 */
+@font-face {
+	font-family: "Barlow Semi Condensed";
+	font-display: swap;
+	font-style: normal;
+	font-weight: 500;
+	src: url(./testimonials-grid-section-main/fonts/BarlowSemiCondensed-Medium.ttf);
+}
+
+/* Barlow Semi Condensed - 600 */
+@font-face {
+	font-family: "Barlow Semi Condensed";
+	font-display: swap;
+	font-style: normal;
+	font-weight: 600;
+	src: url(./testimonials-grid-section-main/fonts/BarlowSemiCondensed-SemiBold.ttf);
+}
+
+/* 
+CSS Reset
+ */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+  2. Remove default margin
+*/
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+	line-height: 1.4;
+	-webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+/* GLOBALS */
+
+body {
+	font-family: "Barlow Semi Condensed", sans-serif;
+	font-size: 0.95rem;
+	background-color: var(--clr-grey-300);
+}
+
+.main {
+	max-width: 1250px;
+	margin: 4em auto;
+}
+
+.flex {
+	display: flex;
+}
+
+/* LAYOUT */
+
+.testimonals {
+	margin: 0 1.8em;
+}
+
+.testimonial__card {
+	padding: 2em 2.2em;
+	border-radius: 9px;
+	margin-bottom: 1.7em;
+}
+
+.testimonial__card__profile {
+	margin-bottom: 1em;
+}
+
+.testimonial__card__profile--flex {
+	align-items: center;
+}
+
+.testimonial__card__1 {
+	background-color: var(--clr-violet);
+	background-image: url(./testimonials-grid-section-main/images/bg-pattern-quotation.svg);
+	background-repeat: no-repeat;
+	background-position: 14em 2px;
+	background-size: 120px;
+}
+
+.testimonial__card__2 {
+	background-color: var(--clr-grey-700);
+}
+
+.testimonial__card__3 {
+	background-color: var(--clr-white);
+}
+
+.testimonial__card__4 {
+	background-color: var(--clr-blue);
+}
+
+.testimonial__card__5 {
+	background-color: var(--clr-white);
+}
+
+/* TYPOGRAPHY */
+
+.testimonial__card__1 .testimonial__card__profile__info__name,
+.testimonial__card__2 .testimonial__card__profile__info__name,
+.testimonial__card__4 .testimonial__card__profile__info__name {
+	color: var(--clr-grey-100);
+}
+
+.testimonial__card__3 .testimonial__card__profile__info__name,
+.testimonial__card__5 .testimonial__card__profile__info__name,
+.testimonial__card__3 .testimonial__card__quoteSnippet,
+.testimonial__card__5 .testimonial__card__quoteSnippet {
+	color: var(--clr-grey-700);
+}
+
+.testimonial__card__1 .testimonial__card__profile__info__status,
+.testimonial__card__2 .testimonial__card__profile__info__status,
+.testimonial__card__4 .testimonial__card__profile__info__status {
+	color: var(--clr-grey-100a);
+	font-size: 0.85rem;
+}
+
+.testimonial__card__3 .testimonial__card__profile__info__status,
+.testimonial__card__5 .testimonial__card__profile__info__status {
+	color: var(--clr-grey-700a);
+}
+
+.testimonial__card__quoteSnippet {
+	font-size: 1.43rem;
+	font-weight: 600;
+	width: 300px;
+	padding-bottom: 0.6em;
+}
+
+.testimonial__card__1 .testimonial__card__quoteSnippet,
+.testimonial__card__2 .testimonial__card__quoteSnippet,
+.testimonial__card__4 .testimonial__card__quoteSnippet {
+	color: var(--clr-grey-300);
+}
+
+.testimonial__card__1 .testimonial__card__quote {
+	color: var(--clr-grey-100a);
+}
+
+.testimonial__card__2 .testimonial__card__quote,
+.testimonial__card__4 .testimonial__card__quote {
+	color: var(--clr-grey-100);
+}
+
+.testimonial__card__3 .testimonial__card__quote,
+.testimonial__card__5 .testimonial__card__quote {
+	color: var(--clr-grey-700b);
+}
+
+/* ASSETS */
+
+.testimonial__card__profile__img {
+	border-radius: 50%;
+	border: 2px solid var(--clr-grey-100a);
+	width: 35px;
+	height: 35px;
+	margin-right: 13px;
+}
+
+/* 
+DESKTOP VIEW
+*/
+
+@media (min-width: 1000px) {
+	.grid {
+		display: grid;
+	}g
+
+	.testimonial__card {
+		padding: 1.7em 2.2em;
+	}
+
+	.testimonals--grid {
+		grid-template-columns: repeat(4, 1fr);
+		column-gap: 1.8em;
+	}
+
+	.testimonial__card__1 {
+		grid-column: 1/3;
+		background-image: url(./testimonials-grid-section-main/images/bg-pattern-quotation.svg);
+		background-repeat: no-repeat;
+		background-position: 24.5em 2px;
+		background-size: 120px;
+	}
+
+	.testimonial__card__4 {
+		grid-column: 2/4;
+	}
+
+	.testimonial__card__5 {
+		grid-row: 1/3;
+		grid-column: 4/5;
+	}
+
+	.testimonial__card__quoteSnippet {
+		width: 100%;
+		padding-bottom: 0.8em;
+	}
+}
