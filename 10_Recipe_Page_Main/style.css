@@ -1,0 +1,298 @@
+/* 
+COLOR KEYS
+*/
+
+:root {
+	--clr-nutmeg: hsl(14, 45%, 36%);
+	--clr-white: hsl(0, 0%, 100%);
+	--clr-grey: hsl(30, 18%, 87%);
+	--clr-pink-100: hsl(330, 100%, 98%);
+	--clr-pink-700: hsl(332, 51%, 32%);
+	--clr-brown-100: hsl(30, 54%, 90%);
+	--clr-brown-500: hsl(30, 10%, 34%);
+	--clr-brown-500a: hsla(32, 10%, 34%, 0.299);
+	--clr-brown-700: hsl(24, 5%, 18%);
+
+	--fnt-family-1: "Young Serif";
+	--fnt-family-2: "Outfit";
+	--fnt-wgt-regular: 400;
+	--fnt-wgt-semibold: 600;
+	--fnt-wgt-bold: 700;
+}
+
+/* 
+CSS RESET
+ */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+  2. Remove default margin
+*/
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+	line-height: 1.7;
+	-webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+/* 
+FONTS
+*/
+
+/* Outfit - 400 */
+
+@font-face {
+	font-family: "Outfit";
+	font-display: swap;
+	font-style: normal;
+	font-weight: var(--fnt-wgt-regular);
+	src: url(./recipe_page_main/assets/fonts/outfit/static/Outfit-Regular.ttf)
+		format("truetype");
+}
+
+/* Outfit - 600 */
+
+@font-face {
+	font-family: var(--fnt-family-2);
+	font-display: swap;
+	font-style: normal;
+	font-weight: var(--fnt-wgt-semibold);
+	src: url(./recipe_page_main/assets/fonts/outfit/static/Outfit-SemiBold.ttf);
+}
+
+/* Outfit - 700 */
+
+@font-face {
+	font-family: var(--fnt-family-2);
+	font-display: swap;
+	font-style: normal;
+	font-weight: var(--fnt-wgt-bold);
+	src: url(./recipe_page_main/assets/fonts/outfit/static/Outfit-Bold.ttf)
+		format("truetype");
+}
+
+/* Young Serif - 400 */
+
+@font-face {
+	font-family: var(--fnt-family-1);
+	font-display: swap;
+	font-style: normal;
+	font-weight: var(--fnt-wgt-regular);
+	src: url(./recipe_page_main/assets/fonts/young-serif/YoungSerif-Regular.ttf)
+		format("truetype");
+}
+
+/* 
+GLOBALS 
+*/
+
+body {
+	font-family: var(--fnt-family-2);
+	font-size: 1rem;
+	color: var(--clr-brown-500);
+	background-color: var(--clr-brown-100);
+}
+
+.main {
+	max-width: 700px;
+	background-color: var(--clr-white);
+}
+
+.flex {
+	display: flex;
+}
+
+.recipeInfo__ingredients__header,
+.recipeInfo__instructions__header,
+.recipeInfo__nutrientValue__header,
+.recipeInfo__nutrientValue__nutrientTable__calorie,
+.recipeInfo__ingredients__list::marker,
+.recipeInfo__instructions__list::marker {
+	color: var(--clr-nutmeg);
+}
+
+.recipeInfo__header,
+.recipeInfo__ingredients__header,
+.recipeInfo__instructions__header,
+.recipeInfo__nutrientValue__header,
+.recipeInfo__nutrientValue__nutrientTable__calorie,
+.recipeInfo__ingredients__list::marker,
+.recipeInfo__instructions__list::marker {
+	font-weight: var(--fnt-wgt-bold);
+}
+
+.recipeInfo__prepTime__list::marker,
+.recipeInfo__prepTime__header {
+	color: var(--clr-pink-700);
+}
+
+.recipeInfo__ingredients,
+.recipeInfo__instructions,
+.recipeInfo__nutrientValue__nutrientTable--border {
+	border-bottom: 1px solid var(--clr-brown-500a);
+}
+
+/* 
+LAYOUT
+*/
+
+.recipeInfo {
+	padding: 2em 1.7em;
+}
+
+.recipeInfo__prepTime {
+	background-color: var(--clr-pink-100);
+	padding: 0.7em 1.7em;
+	margin-bottom: 0.89em;
+	border-radius: 12px;
+}
+
+.recipeInfo__ingredients,
+.recipeInfo__instructions {
+	padding-bottom: 1.4em;
+	margin-bottom: 1.4em;
+}
+
+.recipeInfo__nutrientValue__nutrientTable--flex {
+	padding: 1em 7em 1em 2em;
+	justify-content: space-between;
+}
+
+/* 
+TYPOGRAPHY
+*/
+
+.recipeInfo__header,
+.recipeInfo__ingredients__header,
+.recipeInfo__instructions__header,
+.recipeInfo__nutrientValue__header {
+	font-family: var(--fnt-family-1);
+}
+
+.recipeInfo__ingredients__header,
+.recipeInfo__instructions__header,
+.recipeInfo__nutrientValue__header {
+	font-size: 1.8rem;
+	margin-bottom: 0.4em;
+}
+
+.recipeInfo__header {
+	color: var(--clr-brown-700);
+	font-size: 2.4rem;
+	line-height: 1;
+	margin-bottom: 0.6em;
+}
+
+.recipeInfo__intro {
+	margin-bottom: 1.7em;
+}
+
+.recipeInfo__prepTime__header {
+	font-size: 1.3rem;
+	margin-bottom: 0.4rem;
+}
+
+.recipeInfo__nutrientValue__intro {
+	margin-bottom: 1em;
+}
+
+.bold {
+	font-weight: var(--fnt-wgt-semibold);
+}
+
+/* ASSETS */
+
+ul,
+ol {
+	margin-left: 1em;
+}
+
+li {
+	margin-bottom: 0.3em;
+	padding-left: 1em;
+}
+
+li::marker {
+	font-size: 0.8rem;
+}
+
+/* 
+Large Screen View
+*/
+
+@media (min-width: 700px) {
+	body {
+		padding: 0 1em;
+	}
+
+	.main,
+	.main__img {
+		border-radius: 12px;
+	}
+
+	.main {
+		padding: 2.4em;
+		margin: 4em auto;
+	}
+
+	.main__img {
+		margin-bottom: 2.5em;
+		overflow: hidden;
+	}
+
+	.recipeInfo {
+		padding: 0;
+	}
+
+	.recipeInfo__nutrientValue__nutrientTable--flex {
+		padding: 1em 15em 1em 2em;
+		justify-content: space-between;
+	}
+}
