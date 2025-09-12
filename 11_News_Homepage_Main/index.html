@@ -10,15 +10,16 @@
 			href="./assets/images/favicon-32x32.png"
 		/>
 		<link rel="stylesheet" href="style.css" />
+		<script src="./main.js" defer></script>
 		<title>Frontend Mentor | News homepage</title>
 	</head>
 	<body>
 		<header class="header header--margin header--flex flex">
-			<div class="header__logo-img">
+			<div class="header__logoImg">
 				<img src="./assets/images/logo.svg" alt="a bold W logo" />
 			</div>
 			<nav class="header__nav">
-				<div class="header__nav__hamburgerMenu mobile">
+				<div class="header__nav__menu mobile">
 					<img
 						src="./assets/images/icon-menu.svg"
 						alt="hamburger menu in black"
@@ -26,23 +27,68 @@
 				</div>
 
 				<ul class="header__nav__navbar desktop">
-					<li class="header__nav__navbar__item">
+					<li
+						class="header__nav__navbar__item header__nav__navbar__item--desktop"
+					>
 						<a href="#" class="header__nav__navbar__item__link">Home</a>
 					</li>
-					<li class="header__nav__navbar__item">
+					<li
+						class="header__nav__navbar__item header__nav__navbar__item--desktop"
+					>
 						<a href="#" class="header__nav__navbar__item__link">New</a>
 					</li>
-					<li class="header__nav__navbar__item">
+					<li class="header__nav__navbar__item--desktop">
 						<a href="#" class="header__nav__navbar__item__link">Popular</a>
 					</li>
-					<li class="header__nav__navbar__item">
+					<li
+						class="header__nav__navbar__item header__nav__navbar__item--desktop"
+					>
 						<a href="#" class="header__nav__navbar__item__link">Trending</a>
 					</li>
-					<li class="header__nav__navbar__item">
+					<li
+						class="header__nav__navbar__item header__nav__navbar__item--desktop"
+					>
 						<a href="#" class="header__nav__navbar__item__link">Categories</a>
 					</li>
 				</ul>
 			</nav>
+		</header>
+
+		<header class="header header--menu mobile">
+			<div class="header--menu__container">
+				<img
+					src="./assets/images/icon-menu-close.svg"
+					class="header--menu__container__close"
+					alt=""
+				/>
+				<ul class="header--menu__container__nav">
+					<li
+						class="header--menu__container__nav__item"
+					>
+						<a href="#" class="header--menu__container__nav__item__link">Home</a>
+					</li>
+					<li
+						class="header--menu__container__nav__item"
+					>
+						<a href="#" class="header--menu__container__nav__item__link">New</a>
+					</li>
+					<li
+						class="header--menu__container__nav__item"
+					>
+						<a href="#" class="header--menu__container__nav__item__link">Popular</a>
+					</li>
+					<li
+						class="header--menu__container__nav__item"
+					>
+						<a href="#" class="header--menu__container__nav__item__link">Trending</a>
+					</li>
+					<li
+						class="header--menu__container__nav__item"
+					>
+						<a href="#" class="header--menu__container__nav__item__link">Categories</a>
+					</li>
+				</ul>
+			</div>
 		</header>
 
 		<main class="main main--margin main--grid grid">
