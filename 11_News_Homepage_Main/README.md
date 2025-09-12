@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/quest82/frontend_mentor_projects/tree/main/11_News_Homepage_Main)
-- Live Site URL: [Add live site URL here](https://cool-smakager-d5c12c.netlify.app/)
+- Solution URL: [Solution URL](https://github.com/quest82/frontend_mentor_projects/tree/main/11_News_Homepage_Main)
+- Live Site URL: [Live site URL](https://cool-smakager-d5c12c.netlify.app/)
 
 ## My process
 
